@@ -1,0 +1,40 @@
+.perspective {
+  perspective: 1000px;
+}
+
+.card {
+  width: 80px;
+  height: 80px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.card-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  backface-visibility: hidden;
+  font-size: 2rem;
+}
+
+.card-front {
+  background: #3b82f6;
+}
+
+.card-back {
+  background: white;
+  transform: rotateY(180deg);
+}
