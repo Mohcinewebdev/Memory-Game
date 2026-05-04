@@ -36,11 +36,13 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="bg-brand-dark text-white min-h-screen flex flex-col items-center relative overflow-x-hidden selection:bg-brand-accent selection:text-white">
+<body class="bg-brand-dark text-white min-h-screen w-full flex flex-col items-center relative overflow-x-hidden selection:bg-brand-accent selection:text-white">
   
   <!-- Animated Background Elements -->
-  <div class="absolute top-[-20%] left-[-10%] w-[50vw] h-[50vw] bg-blue-600 rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-pulse pointer-events-none"></div>
-  <div class="absolute bottom-[-20%] right-[-10%] w-[50vw] h-[50vw] bg-purple-600 rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-pulse pointer-events-none" style="animation-delay: 2s; animation-duration: 4s;"></div>
+  <div class="fixed inset-0 overflow-hidden pointer-events-none -z-10">
+    <div class="absolute top-[-20%] left-[-10%] w-[80vw] sm:w-[50vw] h-[80vw] sm:h-[50vw] bg-blue-600 rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-pulse"></div>
+    <div class="absolute bottom-[-20%] right-[-10%] w-[80vw] sm:w-[50vw] h-[80vw] sm:h-[50vw] bg-purple-600 rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-pulse" style="animation-delay: 2s; animation-duration: 4s;"></div>
+  </div>
 
   <!-- Main Container -->
   <main class="relative z-10 flex flex-col items-center w-full max-w-3xl px-4 py-8 my-auto">
